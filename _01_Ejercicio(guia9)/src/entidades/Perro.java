@@ -1,5 +1,5 @@
 
-package Principal;
+package entidades;
 
 
 public class Perro {

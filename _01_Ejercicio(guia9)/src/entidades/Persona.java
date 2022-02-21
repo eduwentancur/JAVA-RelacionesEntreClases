@@ -1,5 +1,5 @@
 
-package Principal;
+package entidades;
 
 
 public class Persona {
@@ -63,11 +63,9 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "\n"
-                +" \nPersona{" 
-                + "\nnombreDeLaPersona=" + nombreDeLaPersona + ", apellidoDeLaPersona=" + apellidoDeLaPersona + ", edad=" + edad 
-                + ",\ndocumento=" + documento + ", perro=" + perro + '}';
+        return "Persona{" + "nombreDeLaPersona=" + nombreDeLaPersona + ", apellidoDeLaPersona=" + apellidoDeLaPersona + ", edad=" + edad + ", documento=" + documento + ", perro=" + perro + '}';
     }
+
     
     
     
