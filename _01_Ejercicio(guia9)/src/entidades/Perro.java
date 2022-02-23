@@ -1,18 +1,20 @@
 
 package entidades;
 
+import enumeraciones.TamañoAnimal;
+
 
 public class Perro {
     
     private String nombreDelPerro;
     private String razaDelPerro;
     private int edad;
-    private double tamaño;
+    private TamañoAnimal tamaño;
 
     public Perro() {
     }
 
-    public Perro(String nombreDelPerro, String razaDelPerro, int edad, double tamaño) {
+    public Perro(String nombreDelPerro, String razaDelPerro, int edad, TamañoAnimal tamaño) {
         this.nombreDelPerro = nombreDelPerro;
         this.razaDelPerro = razaDelPerro;
         this.edad = edad;
@@ -43,17 +45,17 @@ public class Perro {
         this.edad = edad;
     }
 
-    public double getTamaño() {
+    public TamañoAnimal getTamaño() {
         return tamaño;
     }
 
-    public void setTamaño(double tamaño) {
+    public void setTamaño(TamañoAnimal tamaño) {
         this.tamaño = tamaño;
     }
 
     @Override
     public String toString() {
-        return "Perro{" + "nombreDelPerro=" + nombreDelPerro + ", razaDelPerro=" + razaDelPerro + ", edad=" + edad + ", tama\u00f1o=" + tamaño + '}';
+        return "Perro{" + "nombreDelPerro=" + nombreDelPerro + ", razaDelPerro=" + razaDelPerro + ", edad=" + edad + ", tamaño=" + tamaño + '}';
     }
     
     

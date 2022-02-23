@@ -13,12 +13,12 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombreDeLaPersona, String apellidoDeLaPersona, int edad, long documento, Perro perro) {
+    public Persona(String nombreDeLaPersona, String apellidoDeLaPersona, int edad, long documento) {
         this.nombreDeLaPersona = nombreDeLaPersona;
         this.apellidoDeLaPersona = apellidoDeLaPersona;
         this.edad = edad;
         this.documento = documento;
-        this.perro = perro;
+        
     }
 
     public String getNombreDeLaPersona() {
@@ -63,9 +63,8 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombreDeLaPersona=" + nombreDeLaPersona + ", apellidoDeLaPersona=" + apellidoDeLaPersona + ", edad=" + edad + ", documento=" + documento + ", perro=" + perro + '}';
+        return String.format("Persona : Nombre y Apellido: %s %s Edad: %d años Documento: %d Perro:%s ", nombreDeLaPersona,apellidoDeLaPersona,edad, documento,perro );
     }
-
     
     
     
