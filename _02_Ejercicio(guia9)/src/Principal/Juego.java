@@ -1,20 +1,17 @@
 package Principal;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Juego {
-
     private ArrayList<Jugador> jugadores;
     private RevolverDeAgua revolver;
 
     public Juego() {
     }
 
-    public Juego(ArrayList<Jugador> jugadores, RevolverDeAgua revolver, Scanner teclado) {
+    public Juego(ArrayList<Jugador> jugadores, RevolverDeAgua revolver) {
         this.jugadores = jugadores;
         this.revolver = revolver;
-        
     }
 
     public ArrayList<Jugador> getJugadores() {
@@ -52,7 +49,6 @@ public class Juego {
                 }
             }
         } while (finalizoJuego == false);
-
+        System.out.println("JUEGO TERMINADO!!!!!!!!!!!");
     }
-
 }

@@ -9,16 +9,13 @@ import Ejercicio3.enumeraciones.Palos;
 import java.util.EnumSet;
 
 public class BarajaServicio {
-    
     private ArrayList<Carta> mazoCompleto;
-    private int contador;
     private ArrayList<Carta> cartasQueSalieron;
     private Scanner teclado;
 
     public BarajaServicio() {
         this.mazoCompleto      = new ArrayList<>();
         this.cartasQueSalieron = new ArrayList<>();
-        this.contador          = 0;
         this.teclado           = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
     }
 
@@ -85,14 +82,13 @@ public class BarajaServicio {
     public void siguienteCarta() {
         Carta carta = new Carta();
         if (!this.mazoCompleto.isEmpty()) {
-            carta = this.mazoCompleto.get(this.contador);
+            carta = this.mazoCompleto.get(0);
             this.cartasQueSalieron.add(carta);
             System.out.println(carta);
-            this.mazoCompleto.remove(this.contador);
+            this.mazoCompleto.remove(0);
         }else{
             System.out.println("No hay mas carta para dar");
         }
-        
     }
 
     public int cartasDisponibles() {

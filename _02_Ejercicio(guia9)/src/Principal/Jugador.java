@@ -1,9 +1,6 @@
-
 package Principal;
 
-
 public class Jugador {
-
     private int id;
     private String nombre;
     private boolean mojado;
@@ -14,7 +11,6 @@ public class Jugador {
     public Jugador(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-        
     }
 
     public int getId() {
@@ -40,7 +36,6 @@ public class Jugador {
     public void setMojado(boolean mojado) {
         this.mojado = mojado;
     }
-
     
     public boolean disparo(RevolverDeAgua r){
         this.mojado = false;
@@ -50,16 +45,10 @@ public class Jugador {
             return true;
         }
         return this.mojado;
-    
     }
-    
-    
     
     @Override
     public String toString() {
         return String.format("EL %s %d ",nombre, id);
     }
-    
-    
-    
 }

@@ -33,7 +33,6 @@ public class RevolverDeAgua {
     public void llenarRevolver(){
         this.posicionActual = ((int)(Math.random()*6)+1);
         this.posicionAgua = ((int)(Math.random()*6)+1);
-    
     }
     
     public boolean mojar(){
@@ -41,7 +40,6 @@ public class RevolverDeAgua {
             return false;
         }
         return true;
-    
     }
     
     public void siguienteChorro(){
@@ -52,28 +50,9 @@ public class RevolverDeAgua {
             this.posicionActual++;
         }
     }
-    
-    
-    
+
     @Override
     public String toString() {
         return String.format("Posicion Acutual: %s Posicion del Agua: %s",this.posicionActual,this.posicionAgua);
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
