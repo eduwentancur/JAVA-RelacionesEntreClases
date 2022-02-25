@@ -55,7 +55,7 @@ public class Perro {
 
     @Override
     public String toString() {
-        return "Perro{" + "nombreDelPerro=" + nombreDelPerro + ", razaDelPerro=" + razaDelPerro + ", edad=" + edad + ", tamaño=" + tamaño + '}';
+        return String.format("Perro : nombre %s raza %s %d años tamaño %s", this.nombreDelPerro,this.razaDelPerro,this.edad,this.tamaño);
     }
     
     
